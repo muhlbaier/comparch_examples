@@ -159,6 +159,7 @@ module vga_cpu_visual(clock_50, red_out, green_out, blue_out, h_sync, v_sync,
 			8'd56: data_char_offset <= row_data[3];
 			8'd57: data_char_offset <= row_data[2];
 			8'd58: data_char_offset <= row_data[1];
+			8'd59: data_char_offset <= row_data[0];
 			default: data_char_offset <= 8'b0;
 		endcase
 	end
